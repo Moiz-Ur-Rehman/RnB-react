@@ -1,0 +1,10 @@
+/* ANIMATIONS */
+.animate-opacity{
+  animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
+}
+.animate-right{
+  animation:animateright 1s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}
+}
+.animate-left{
+  animation:animateleft 0.7s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}
+}

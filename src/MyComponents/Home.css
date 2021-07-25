@@ -1,0 +1,98 @@
+.main{
+    width: 70%;
+    margin: 100px 20px 0px 30px;
+}
+.main-container{
+    position: relative;
+    text-align: center;
+}
+.main-container img{
+    width: 75%;
+}
+.main-wrap{
+    position: relative;
+}
+.indicators{
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+.indicators .each-slideshow-indicator::before{
+    padding: 1px;
+}
+.shop-now{
+    position: absolute;
+    top: 40%;
+    text-align: left;
+}
+.shop-now h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #131313;
+}
+.shop-now h1:hover{
+    color: rgb(60, 60, 60);
+}
+.shop-now a{
+    text-decoration: none;
+    color: #002fa7;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #131313;
+    font-size: 12px;
+    margin-left: 2px;
+}
+.main .slider{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+.slider img{
+    width: 24%;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1025px) {
+    .shop-now h1{
+        font-size: 40px;
+    }
+    .main{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .slider img{
+        width: 45%;
+    }
+    .shop-now h1{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .indicators{
+        display: none!important;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .shop-now{
+        position: relative;
+    }
+    .main{
+        margin: 140px 0 0 20px;
+        width: 88%;
+    }
+    .main-container img{
+        width: 100%;
+    }
+    .shop-now h1{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .shop-now a{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,146 @@
+/* CSS of 6 pages i.e. LOGIN, REGISTER, CONTACT US, ABOUT US, T&C, SHIPPING AND RETURNS */
+
+.login , .register , .contact{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 100%;
+}
+.login-wrap , .register-wrap , .contact-wrap{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-wrap h6 , .register-wrap h6 , .contact-wrap h6{
+    color: #002fa7;
+    margin-bottom: 15px;
+}
+.login-wrap h2 , .register-wrap h2 , .contact-wrap h2{
+    margin-bottom: 40px;
+}
+.all{
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #6e6e6e;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-size: 17px;
+    color: #131313;
+    font-weight: bold;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #131313;
+    font-weight: bold;
+    opacity: 1;
+}
+.login-wrap #forgot-pass{
+    color: #6e6e6e;
+    font-size: 13px;
+    text-decoration: none;
+}
+.login-wrap #forgot-pass:hover{
+    color: rgb(70, 70, 70);
+}
+.login-wrap button , .register-wrap button , .contact-wrap button{
+    border: none;
+    margin-top: 30px;
+    color: white;
+    padding: 12px 15px;
+    background-color: #131313;
+    font-weight: bold;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+.login-wrap button:hover , .register-wrap button:hover , .contact-wrap button:hover{
+    background-color: rgb(30, 30, 30);
+}
+.line{
+    border-bottom: 3px solid black;
+    margin: 50px 0px 40px;
+}
+.login-wrap p , .register-wrap p , .contact-wrap p{
+    color: #6e6e6e;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.login-wrap #register-btn , .register-wrap #login-btn{
+    text-decoration: none;
+    color: #6e6e6e;
+    border: 1px solid #6e6e6e;
+    padding: 10px;
+    font-size: 14px;
+}
+.login-wrap #register-btn:hover , .register-wrap #login-btn:hover{
+    border: 1px solid rgb(70, 70, 70);
+}
+
+/* About Us and Returns and T&C*/
+.about , .returns , .terms{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 100%;
+}
+.about{
+    margin-bottom: 220px;
+}
+.about-wrap , .return-wrap{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-wrap h2 , .return-wrap h2{
+    margin-bottom: 30px;
+    color: #131313;
+}
+.about-wrap p , .return-wrap p{
+    color: #6e6e6e;
+    margin-bottom: 20px;
+}
+.terms-wrap p{
+    color: #6e6e6e;
+    margin-bottom: 10px;
+}
+.terms-wrap{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.terms-wrap h2{
+    margin-bottom: 20px;
+    color: #131313;
+}
+.terms-wrap h3{
+    margin-bottom: 10px;
+    color: #002fa7;
+}
+.terms-wrap h4{
+    margin-bottom: 10px;
+    color: #002fa7;
+    font-weight: lighter;
+}
+
+
+/* Responsiveness*/
+@media only screen and (max-width: 1025px) {
+    .login-wrap , .register-wrap , .contact-wrap{
+        width:35%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .login-wrap , .register-wrap , .contact-wrap{
+        width:50%;
+    }
+    .about-wrap , .return-wrap , .terms-wrap{
+        width: 88%;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .login-wrap , .register-wrap , .contact-wrap{
+        width:88%;
+    }
+    .about , .returns , .terms{
+        margin-top: 140px;
+    }
+    .login , .register , .contact{
+        margin-top: 150px;
+    }
+}

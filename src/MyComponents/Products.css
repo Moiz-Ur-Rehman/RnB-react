@@ -1,0 +1,56 @@
+.all-products{
+    width: 70%;
+    margin: 100px 20px 0px 30px;
+}
+.all-wrap{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 55px 40px;
+}
+.card-img{
+    width: 100%;
+}
+.card-img:hover{
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+.card-details{
+    padding-left: 4px;
+}
+.card-details h4{
+    color: #002fa7;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: -23px;
+    position: absolute;
+}
+.card-details h3{
+    padding-top: 5px;
+    text-decoration: none;
+    color: #131313;
+}
+.card-details h3:hover{
+    color: rgb(60, 60, 60);
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1025px) {
+    .all-products{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .all-wrap{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .all-products{
+        margin: 140px 0 0 20px;
+        width: 88%;
+    }
+    .all-wrap{
+        grid-template-columns: auto;
+    }
+}
